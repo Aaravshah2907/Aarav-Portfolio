@@ -408,6 +408,7 @@ article .icon {
   justify-content: center;
   gap: 0.5rem;
   margin: 1rem;
+  padding: 0.5rem;
 }
 
 .contact-info-container p {
