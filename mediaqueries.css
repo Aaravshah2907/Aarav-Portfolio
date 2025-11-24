@@ -58,6 +58,10 @@
     padding-top: 120px;
   }
   
+  .profile-container {
+    flex-direction: column;
+  }
+  
   .profile-pic-wrapper {
     width: 300px;
     height: 300px;
