@@ -3,25 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AARAV SHAH</title>
+    <title>Aarav Shah | Physics & Computing Student</title>
+    <meta name="description" content="Portfolio of Aarav Shah, a B.E. Mathematics & Computing and M.Sc. Physics student at BITS Pilani." />
     <link rel="icon" href="./assets/final_logo.png" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
+    <!-- Navigation -->
     <nav id="desktop-nav">
       <div class="logo">
-        <img class="icon contact-icon" src="assets/final_logo.png" />Aarav Shah
+        <img src="assets/final_logo.png" alt="Logo" /> Aarav Shah
       </div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#academics">Academics</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#journey">Journey</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <button class="theme-btn" id="theme-toggle-btn" aria-label="Toggle Theme">
+            <img id="theme-icon" src="assets/sun.svg" alt="Theme Toggle" />
+          </button>
+        </li>
+      </ul>
     </nav>
+
     <nav id="hamburger-nav">
       <div class="logo">Aarav Shah</div>
       <div class="hamburger-menu">
@@ -32,525 +41,564 @@
         </div>
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#academics" onclick="toggleMenu()">Academics</a></li>
+          <li><a href="#research" onclick="toggleMenu()">Research</a></li>
+          <li><a href="#journey" onclick="toggleMenu()">Journey</a></li>
           <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <li><a href="#" id="mobile-theme-toggle" onclick="toggleMenu()">Toggle Theme</a></li>
         </div>
       </div>
     </nav>
+
+    <!-- Hero Section -->
     <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="Aarav Shah Profile Picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello I'm</p>
-        <h1 class="title">Aarav Shah</h1>
-        <p class="section__text__p2">Back-end Developer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='.#contact'">
-            Contact Info
-          </button>
+      <div class="glow-1"></div>
+      <div class="glow-2"></div>
+      
+      <div class="profile-container">
+        <div class="profile-pic-wrapper">
+          <img src="./assets/profile-pic.png" alt="Aarav Shah Profile Picture" />
         </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn Profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/aarav-shah-208396232/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github Profile"
-            class="icon"
-            onclick="location.href='https://github.com/Aaravshah2907'"
-          />
+        <div class="profile-text">
+          <p>Hello, I'm</p>
+          <h1 class="gradient-text">Aarav Shah</h1>
+          <p class="role">Physics & Computing Student | Aspiring Researcher</p>
+          
+          <div class="btn-container">
+            <button class="btn btn-primary" onclick="window.open('./assets/resume-example.pdf')">
+              Download CV
+            </button>
+            <button class="btn btn-secondary" onclick="location.href='#contact'">
+              Contact Info
+            </button>
+          </div>
+          
+          <div class="socials-container">
+            <img src="./assets/linkedin.png" alt="LinkedIn" class="social-icon" onclick="window.open('https://www.linkedin.com/in/aarav-shah-208396232/')" />
+            <img src="./assets/github.png" alt="GitHub" class="social-icon" onclick="window.open('https://github.com/Aaravshah2907')" />
+            <img src="./assets/x.png" alt="X (Twitter)" class="social-icon" onclick="window.open('https://x.com/Aaravshah29')" />
+            <img src="./assets/Instagram.png" alt="Instagram" class="social-icon" onclick="window.open('https://instagram.com/Aarav.shah.29')" />
+          </div>
         </div>
       </div>
     </section>
+
+    <!-- About Section -->
     <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.jpg"
-            alt="Profile Picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience Icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
+      <p class="section-subtitle">Get To Know More</p>
+      <h2 class="title">About Me</h2>
+      
+      <div class="container">
+        <div class="about-content">
+          <div class="about-pic-container">
+            <img src="./assets/about_me_developer.png" alt="Aarav Shah" class="about-pic" />
+          </div>
+          
+          <div class="about-details">
+            <div class="stats-container">
+              <div class="stat-card">
+                <img src="./assets/experience.png" alt="Experience" />
+                <h3>Experience</h3>
+                <p>6+ Years Python <br />1+ Year Web Dev</p>
+              </div>
+              <div class="stat-card">
+                <img src="./assets/education.png" alt="Education" />
+                <h3>Education</h3>
+                <p>BITS Pilani<br />M.Sc. Physics &<br />B.E. Math & Computing</p>
+              </div>
+            </div>
+            
+            <div class="text-container">
               <p>
-                1.5+ years <br />Python Experience <br />Back-End Development
+                Hi, I am Aarav Shah, a Junior (3rd Year) student at <strong>Birla Institute of Technology & Science, Pilani</strong>. 
+                I am pursuing a Dual Degree in <strong>M.Sc. Physics</strong> and <strong>B.E. Mathematics & Computing</strong> (2023-2028).
+              </p>
+              <br />
+              <p>
+                Based in Mumbai, I have a strong passion for both theoretical physics and computational problem-solving. 
+                My journey involves exploring the intersection of mathematics, physics, and computer science. 
+                I actively work on projects involving Python automation, web development, and physics simulations.
               </p>
             </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education Icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>Student at BITS PILANI<br />B.E. degree <br />M.Sc PHYSICS</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              Hi, I am Aarav Shah. I am a student at BIRLA INSTITUTE OF
-              TECHNOLOGY & SCIENCE, PILANI. I am a Physics Dualite. I am a
-              Mumbaikar. I completed my School from Ryan International School,
-              Malad (ICSE). I am trying to develop a better understanding of
-              Front & Back-end Development. I have created a simple static
-              webpage, I hope you like what you see.
-            </p>
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
     </section>
+
+    <!-- Research & Interests Section (NEW) -->
+    <section id="research">
+      <p class="section-subtitle">Academic Focus</p>
+      <h2 class="title">Research & Interests</h2>
+      <div class="container">
+        <div class="research-grid">
+          <div class="research-card">
+            <h3>Computational Physics</h3>
+            <p>Simulating complex physical systems using numerical methods and Python. Focus on wave mechanics and particle dynamics.</p>
+          </div>
+          <div class="research-card">
+            <h3>Data Modeling</h3>
+            <p>Analyzing large datasets (NetCDF) for oceanographic research, utilizing tools like Ferret and Bash scripting.</p>
+          </div>
+          <div class="research-card">
+            <h3>Web Technologies</h3>
+            <p>Building responsive, modern web applications with a focus on clean UI/UX and efficient backend logic.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Academics Section (Renamed & Expanded) -->
+    <section id="academics">
+      <p class="section-subtitle">Academic Background</p>
+      <h2 class="title">Academics & Certifications</h2>
+      <div class="container">
+        
+        <!-- Relevant Coursework -->
+        <div class="academics-category">
+          <h3>Relevant Coursework</h3>
+          <div class="coursework-categories">
+            
+            <!-- Physics Courses -->
+            <div class="course-category-group">
+              <h4>Physics</h4>
+              <div class="course-items">
+                <span class="course-tag">Thermodynamics</span>
+                <span class="course-tag">Mechanics, Oscillations & Waves</span>
+                <span class="course-tag">Classical Mechanics</span>
+                <span class="course-tag">Electro-Magnetic Theory -1</span>
+                <span class="course-tag hidden-course">Optics</span>
+                <span class="course-tag hidden-course">ElectroMagnetic & Optics Lab</span>
+                <span class="course-tag hidden-course">Quantum Information & Computing</span>
+                <span class="course-tag hidden-course">Quantum Mechanics - 1</span>
+                <span class="course-tag hidden-course">Electro-Magnetic Theory -2</span>
+                <span class="course-tag hidden-course">Intro to Astronomy & Astrophysics</span>
+                <span class="course-tag hidden-course">Mathematical Methods of Physics</span>
+                <span class="course-tag hidden-course">Theory of Relativity</span>
+                <span class="course-tag hidden-course">Modern Physics Lab</span>
+                <span class="course-tag hidden-course">Quantum Mechanics -II</span>
+                <span class="course-tag hidden-course">Statistical Mechanics</span>
+                <span class="course-tag hidden-course">Computational Physics</span>
+                <span class="course-tag hidden-course">Solid State Physics (Ongoing)</span>
+                <span class="course-tag hidden-course">Atomic & Molecular Physics (Ongoing)</span>
+                <span class="course-tag hidden-course">Nuclear & Particle Physics (Ongoing)</span>
+                <span class="course-tag hidden-course">Advanced Physics Lab (Ongoing)</span>
+              </div>
+              <button class="toggle-courses-btn" onclick="toggleCourses(this)">Show More</button>
+            </div>
+
+            <!-- Mathematics Courses -->
+            <div class="course-category-group">
+              <h4>Mathematics</h4>
+              <div class="course-items">
+                <span class="course-tag">Integral Calculus (M1)</span>
+                <span class="course-tag">Linear Algebra (M2)</span>
+                <span class="course-tag">Probability & Statistics</span>
+                <span class="course-tag">Differential Equations (M3)</span>
+                <span class="course-tag hidden-course">Discrete Mathematics</span>
+                <span class="course-tag hidden-course">Linear Algebra & Applications</span>
+                <span class="course-tag hidden-course">Numerical Optimization (Ongoing)</span>
+                <span class="course-tag hidden-course">Stochastic Calculus (Ongoing)</span>
+              </div>
+              <button class="toggle-courses-btn" onclick="toggleCourses(this)">Show More</button>
+            </div>
+
+            <!-- Computer Science Courses -->
+            <div class="course-category-group">
+              <h4>Computer Science</h4>
+              <div class="course-items">
+                <span class="course-tag">Computer Programming (C Language)</span>
+                <span class="course-tag">Object Oriented Programming</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Certifications -->
+        <div class="academics-category">
+          <h3>Certifications</h3>
+          <div class="certifications-grid">
+            
+            <a href="https://www.linkedin.com/in/aaravshah2907/details/certifications/" target="_blank" class="cert-card">
+              <h4>Data Analysis with Python</h4>
+              <p class="cert-issuer">freeCodeCamp</p>
+              <p class="cert-date">Aug 2025</p>
+            </a>
+
+            <a href="https://www.linkedin.com/in/aaravshah2907/details/certifications/" target="_blank" class="cert-card">
+              <h4>Intro to Shell Scripting Basics</h4>
+              <p class="cert-issuer">CodeSignal</p>
+              <p class="cert-date">Aug 2025</p>
+            </a>
+            
+            <a href="https://www.linkedin.com/in/aaravshah2907/details/certifications/" target="_blank" class="cert-card">
+              <h4>Java Fundamentals</h4>
+              <p class="cert-issuer">Coddy</p>
+              <p class="cert-date">Aug 2025</p>
+            </a>
+
+            <a href="https://www.linkedin.com/in/aaravshah2907/details/certifications/" target="_blank" class="cert-card">
+              <h4>Postman API Fundamentals</h4>
+              <p class="cert-issuer">Canvas Credentials</p>
+              <p class="cert-date">Mar 2025</p>
+            </a>
+
+            <a href="https://www.linkedin.com/in/aaravshah2907/details/certifications/" target="_blank" class="cert-card">
+              <h4>Crash Course on Tkinter</h4>
+              <p class="cert-issuer">Great Learning</p>
+              <p class="cert-date">Jul 2024</p>
+            </a>
+
+            <a href="https://www.linkedin.com/in/aaravshah2907/details/certifications/" target="_blank" class="cert-card">
+              <h4>Getting Started With AI Agents</h4>
+              <p class="cert-issuer">SuperAGI</p>
+              <p class="cert-date">Sep 2023</p>
+            </a>
+
+            <a href="https://www.linkedin.com/in/aaravshah2907/details/certifications/" target="_blank" class="cert-card">
+              <h4>Crash Course on Python</h4>
+              <p class="cert-issuer">EDX Alumni</p>
+              <p class="cert-date">Jul 2023</p>
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Journey Timeline Section -->
+    <section id="journey">
+      <p class="section-subtitle">My Path</p>
+      <h2 class="title">Journey So Far</h2>
+      <div class="timeline">
+        <div class="timeline-item left">
+          <div class="timeline-content">
+            <h3>2019</h3>
+            <p>Started coding journey with Java & Python.</p>
+          </div>
+        </div>
+        <div class="timeline-item right">
+          <div class="timeline-content">
+            <h3>2021</h3>
+            <p>Explored Automation & Scripting during the pandemic.</p>
+          </div>
+        </div>
+        <div class="timeline-item left">
+          <div class="timeline-content">
+            <h3>2023</h3>
+            <p>Started Dual Degree at BITS Pilani (M.Sc. Physics + B.E. Math).</p>
+          </div>
+        </div>
+        <div class="timeline-item right">
+          <div class="timeline-content">
+            <h3>2024</h3>
+            <p>Deep dived into Web Development and Python Automation projects.</p>
+          </div>
+        </div>
+        <div class="timeline-item left">
+          <div class="timeline-content">
+            <h3>May 2025 - July 2025</h3>
+            <p><strong>Research Intern at NCPOR</strong> under Dr. Arnab Mukherjee.</p>
+            <p>Conducted the <em>"Study of Long-Term Variability of Ocean Sea Level and Currents in the Bay of Bengal"</em>.</p>
+            <p>Utilized Python for NetCDF data analysis, simulated oceanic conditions using the LCS model, and visualized Sea Level Anomalies (SLA).</p>
+          </div>
+        </div>
+        <div class="timeline-item right">
+          <div class="timeline-content">
+            <h3>Aug 2025 - Present (Expected Dec 2025)</h3>
+            <p>Started Research Project: 'Socio-Economic Impact of Solar Energy in Rural India' under Dr. Sumanata Pasari.</p>
+          </div>
+        </div>
+        <div class="timeline-item left">
+          <div class="timeline-content">
+            <h3>Aug 2025</h3>
+            <p>Joined Student Faculty Committee (Physics Dept).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience & Skills Section -->
     <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <hl class="title">Experience</hl>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">
-              Programming Languages I am familiar with
-            </h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>INTERMEDIATE</p>
+      <p class="section-subtitle">Explore My</p>
+      <h2 class="title">Experience & Skills</h2>
+      
+      <div class="container">
+        <!-- Work History -->
+        <div class="work-history-container" style="margin-bottom: 3rem;">
+          <h3 style="text-align: center; margin-bottom: 2rem; color: var(--text-primary);">Work History</h3>
+          <div class="projects-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+            
+            <!-- Internship -->
+            <div class="project-card" style="padding: 2rem;">
+              <div class="project-content" style="padding: 0;">
+                <h3 class="project-title">Research Intern</h3>
+                <a href="https://www.linkedin.com/in/aarav-shah-208396232/" target="_blank" style="text-decoration: none;">
+                  <p style="color: var(--primary); font-size: 0.9rem; margin-bottom: 0.5rem; cursor: pointer;">National Centre for Polar and Ocean Research (NCPOR) ↗</p>
+                </a>
+                <p style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 1rem;">May 2025 - Jul 2025 • Remote</p>
+                <p class="project-desc">
+                  Conducted research involving Data Modeling and Model Making. Utilized tools like Ferret, NetCDF, and Bash for oceanographic data analysis.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">Data Modeling</span>
+                  <span class="tag">Bash</span>
+                  <span class="tag">Ferret</span>
                 </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>INTERMEDIATE</p>
+              </div>
+            </div>
+
+            <!-- Committee Member -->
+            <div class="project-card" style="padding: 2rem;">
+              <div class="project-content" style="padding: 0;">
+                <h3 class="project-title">Committee Member</h3>
+                <a href="https://www.linkedin.com/in/aarav-shah-208396232/" target="_blank" style="text-decoration: none;">
+                  <p style="color: var(--primary); font-size: 0.9rem; margin-bottom: 0.5rem; cursor: pointer;">Student Faculty Committee - Physics Dept ↗</p>
+                </a>
+                <p style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 1rem;">Aug 2025 - Present • BITS Pilani</p>
+                <p class="project-desc">
+                  Active member of the Physics Department Student Faculty Committee, facilitating communication between students and faculty.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">Leadership</span>
+                  <span class="tag">Teamwork</span>
                 </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience"
-                  class="icon"
-                />
-                <div>
-                  <h3>JAVA</h3>
-                  <p>BASICS</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience"
-                  class="icon"
-                />
-                <div>
-                  <h3>PYTHON</h3>
-                  <p>INTERMEDIATE</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience"
-                  class="icon"
-                />
-                <div>
-                  <h3>C</h3>
-                  <p>BASICS</p>
-                </div>
-              </article>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Skills Grid (Redesigned) -->
+        <h3 style="text-align: center; margin-bottom: 2rem; color: var(--text-primary);">Technical Skills</h3>
+        <div class="experience-grid">
+          <!-- Programming Languages (8) -->
+          <div class="skill-category">
+            <h3>Languages</h3>
+            <div class="skills-list">
+              <div class="skill-item"><img src="./assets/checkmark.png" alt="Check" /><div><h4>Python</h4><p>Advanced</p></div></div>
+              <div class="skill-item"><img src="./assets/checkmark.png" alt="Check" /><div><h4>Java</h4><p>Intermediate</p></div></div>
+              <div class="skill-item"><img src="./assets/checkmark.png" alt="Check" /><div><h4>C</h4><p>Basics</p></div></div>
+              <div class="skill-item"><img src="./assets/checkmark.png" alt="Check" /><div><h4>C++</h4><p>Basics</p></div></div>
+              <div class="skill-item"><img src="./assets/checkmark.png" alt="Check" /><div><h4>HTML</h4><p>Intermediate</p></div></div>
+              <div class="skill-item"><img src="./assets/checkmark.png" alt="Check" /><div><h4>CSS</h4><p>Intermediate</p></div></div>
+              <div class="skill-item"><img src="./assets/checkmark.png" alt="Check" /><div><h4>JavaScript</h4><p>Intermediate</p></div></div>
+              <div class="skill-item"><img src="./assets/checkmark.png" alt="Check" /><div><h4>SQL</h4><p>Basics</p></div></div>
             </div>
           </div>
-          <!--
-          <div class="details-container">
-            <h2 class="experience-sub-title">Title</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience"
-                  class="icon"
-                />
-                <div>
-                  <h3>GIT</h3>
-                  <p>BASICS</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience"
-                  class="icon"
-                />
-                <div>
-                  <h3>ITEM 2</h3>
-                  <p>INTERMEDIATE</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience"
-                  class="icon"
-                />
-                <div>
-                  <h3>ITEM 3</h3>
-                  <p>BASICS</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience"
-                  class="icon"
-                />
-                <div>
-                  <h3>ITEM 4</h3>
-                  <p>INTERMEDIATE</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience"
-                  class="icon"
-                />
-                <div>
-                  <h3>ITEM 5</h3>
-                  <p>BASICS</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience"
-                  class="icon"
-                />
-                <div>
-                  <h3>ITEM 6</h3>
-                  <p>BASICS</p>
-                </div>
-              </article>
+          
+          <!-- Tools & Software (8) -->
+          <div class="skill-category">
+            <h3>Tools & Software</h3>
+            <div class="skills-list">
+              <div class="skill-item"><img src="./assets/checkmark.png" alt="Check" /><div><h4>Git/GitHub</h4><p>Intermediate</p></div></div>
+              <div class="skill-item"><img src="./assets/checkmark.png" alt="Check" /><div><h4>VS Code</h4><p>Advanced</p></div></div>
+              <div class="skill-item"><img src="./assets/checkmark.png" alt="Check" /><div><h4>Jupyter</h4><p>Advanced</p></div></div>
+              <div class="skill-item"><img src="./assets/checkmark.png" alt="Check" /><div><h4>PyCharm</h4><p>Intermediate</p></div></div>
+              <div class="skill-item"><img src="./assets/checkmark.png" alt="Check" /><div><h4>Selenium</h4><p>Intermediate</p></div></div>
+              <div class="skill-item"><img src="./assets/checkmark.png" alt="Check" /><div><h4>Postman</h4><p>Basics</p></div></div>
+              <div class="skill-item"><img src="./assets/checkmark.png" alt="Check" /><div><h4>Linux/Bash</h4><p>Intermediate</p></div></div>
+              <div class="skill-item"><img src="./assets/checkmark.png" alt="Check" /><div><h4>Gnuplot</h4><p>Intermediate</p></div></div>
             </div>
           </div>
-          -->
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
     </section>
+
+    <!-- Projects Section -->
     <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
+      <p class="section-subtitle">Browse My Recent</p>
+      <h2 class="title">Projects</h2>
+      
+      <div class="container">
+        <div class="projects-grid">
+          
+          <!-- Project 1: College WiFi Login -->
+          <div class="project-card">
+            <div class="project-img-wrapper">
+              <img src="./assets/wifi.png" alt="College WiFi Login" class="project-img" />
             </div>
-            <h3 class="experience-sub-title project-title">
-              Trigo-Inverse Calculator
-            </h3>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Aaravshah2907/My_code/tree/f9bd1cba9d8ac207da7d5010b3085b0ae7c5372d/Calculator'"
-              >
-                Github Code
+            <div class="project-content">
+              <h3 class="project-title">College WiFi Automation</h3>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Selenium</span>
+                <span class="tag">Automation</span>
+              </div>
+              <p class="project-desc">
+                An automated script designed for BITS Pilani students to bypass manual login processes for the campus WiFi network, saving time and ensuring seamless connectivity.
+              </p>
+              <button class="btn btn-secondary" onclick="window.open('https://github.com/Aaravshah2907/College-Wifi-Login')">
+                <img src="./assets/github.png" alt="GitHub"> Code
               </button>
-              <!--
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.github.com'"
-              >
-                Live Demo
-              </button>
-              -->
             </div>
           </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
+
+          <!-- Project 2: Trigo Inverse -->
+          <div class="project-card">
+            <div class="project-img-wrapper">
+              <img src="./assets/trigo.png" alt="Trigo Inverse" class="project-img" />
             </div>
-            <h3 class="experience-sub-title project-title">
-              Note Taking Web Application
-            </h3>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Aaravshah2907/Note-taking'"
-              >
-                Github Code
+            <div class="project-content">
+              <h3 class="project-title">Trigo-Inverse Calculator</h3>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Math</span>
+                <span class="tag">Algorithms</span>
+              </div>
+              <p class="project-desc">
+                A sophisticated Python program that calculates inverse trigonometric functions, capable of handling both real and complex number outputs with high precision.
+              </p>
+              <button class="btn btn-secondary" onclick="window.open('https://github.com/Aaravshah2907/Trigo_Inverse')">
+                <img src="./assets/github.png" alt="GitHub"> Code
               </button>
-              <!--
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.github.com'"
-              >
-                Live Demo
-              </button>
-              -->
             </div>
           </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
+
+          <!-- Project 3: Note Taking App -->
+          <div class="project-card">
+            <div class="project-img-wrapper">
+              <img src="./assets/notes.png" alt="Note Taking App" class="project-img" />
             </div>
-            <h3 class="experience-sub-title project-title">Sudoko Solver</h3>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Aaravshah2907/My_code/tree/main/Sudoku_Solver'"
-              >
-                Github Code
+            <div class="project-content">
+              <h3 class="project-title">Note Taking Web App</h3>
+              <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+              </div>
+              <p class="project-desc">
+                A modern, responsive web application for creating, editing, and managing personal notes. Features local storage persistence and a clean, dark-mode UI.
+              </p>
+              <button class="btn btn-secondary" onclick="window.open('https://github.com/Aaravshah2907/Note-taking')">
+                <img src="./assets/github.png" alt="GitHub"> Code
               </button>
-              <!--
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.github.com'"
-              >
-                Live Demo
-              </button>
-              -->
             </div>
           </div>
+          
+          <!-- Project 4: Computational Physics -->
+          <div class="project-card">
+            <div class="project-img-wrapper">
+              <img src="./assets/physics.png" alt="Computational Physics" class="project-img" />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Computational Physics</h3>
+              <div class="project-tags">
+                <span class="tag">Jupyter</span>
+                <span class="tag">Physics</span>
+                <span class="tag">Simulation</span>
+              </div>
+              <p class="project-desc">
+                A comprehensive collection of physics simulations and computational problems solved using Python and Jupyter Notebooks, demonstrating complex physical phenomena.
+              </p>
+              <button class="btn btn-secondary" onclick="window.open('https://github.com/Aaravshah2907/Computational-Physics')">
+                <img src="./assets/github.png" alt="GitHub"> Code
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 5: Type Converter -->
+          <div class="project-card">
+            <div class="project-img-wrapper">
+              <img src="./assets/converter.png" alt="Type Converter" class="project-img" />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Type Converter</h3>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Utilities</span>
+                <span class="tag">Data Structures</span>
+              </div>
+              <p class="project-desc">
+                A versatile utility tool for converting between various data types in Python. Simplifies data manipulation tasks and ensures type safety in larger applications.
+              </p>
+              <button class="btn btn-secondary" onclick="window.open('https://github.com/Aaravshah2907/type_converter')">
+                <img src="./assets/github.png" alt="GitHub"> Code
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 6: Personal Portfolio (NEW) -->
+          <div class="project-card">
+            <div class="project-img-wrapper">
+              <img src="./assets/portfolio.png" alt="Personal Portfolio" class="project-img" />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Personal Portfolio</h3>
+              <div class="project-tags">
+                <span class="tag">HTML/CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Design</span>
+              </div>
+              <p class="project-desc">
+                The very website you are viewing! A fully responsive, dark-mode portfolio featuring glassmorphism, smooth animations, and a custom design system.
+              </p>
+              <button class="btn btn-secondary" onclick="window.open('https://github.com/Aaravshah2907')">
+                <img src="./assets/github.png" alt="GitHub"> Code
+              </button>
+            </div>
+          </div>
+
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
     </section>
-    <section id="contact" style="margin-top: 10rem">
-      <span></span>
-      <span></span>
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email Icon"
-            class="icon contact-icon contact-email-icon"
-          />
-          <p>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <p class="section-subtitle">Get in Touch</p>
+      <h2 class="title">Contact Me</h2>
+      
+      <div class="contact-container">
+        <div class="contact-grid">
+          <div class="contact-item">
+            <img src="./assets/phone.png" alt="Phone" />
+            <a href="./assets/aarav.shah-contact.vcf" download>Save Contact (VCF)</a>
+          </div>
+          
+          <div class="contact-item">
+            <img src="./assets/email.png" alt="Email" />
             <a href="mailto:aaravshah0011@gmail.com">aaravshah0011@gmail.com</a>
-          </p>
-        </div>
+          </div>
+          
+          <div class="contact-item">
+            <img src="./assets/email.png" alt="Email" />
+            <a href="mailto:f20231325@pilani.bits-pilani.ac.in">BITS Email</a>
+          </div>
+          
+          <div class="contact-item">
+            <img src="./assets/linkedin.png" alt="LinkedIn" />
+            <a href="https://www.linkedin.com/in/aarav-shah-208396232/">LinkedIn Profile</a>
+          </div>
 
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email Icon"
-            class="icon contact-icon contact-email-icon"
-          />
-          <p>
-            <a href="mailto:f20231325@pilani.bits-pilani.ac.in"
-              >f20231325@pilani.bits-pilani.ac.in</a
-            >
-          </p>
-        </div>
-
-        <div class="contact-info-container">
-          <img
-            src="./assets/Linktree.png"
-            alt="Linktree Icon"
-            class="icon contact-icon"
-          />
-          <p>
-            <a href="https://linktr.ee/aarav.shah"> Link Tree</a>
-          </p>
-        </div>
-
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn Icon"
-            class="icon contact-icon"
-          />
-          <p>
-            <a href="https://www.linkedin.com/in/aarav-shah-208396232/"
-              >Linked In</a
-            >
-          </p>
-        </div>
-
-        <div class="contact-info-container">
-          <img
-            src="./assets/Instagram.png"
-            alt="Instagram Icon"
-            class="icon contact-icon"
-          />
-          <p>
-            <a href="https://instagram.com/Aarav.shah.29"> Instagram</a>
-          </p>
-        </div>
-
-        <div class="contact-info-container">
-          <img src="./assets/x.png" alt="X Icon" class="icon contact-icon" />
-          <p>
-            <a href="https://x.com/Aaravshah29"> X</a>
-          </p>
-        </div>
-
-        <div class="contact-info-container">
-          <img
-            src="./assets/Spotify.png"
-            alt="Spotify Icon"
-            class="icon contact-icon"
-          />
-          <p>
-            <a
-              href="https://open.spotify.com/user/31czj4llcld6twiepcilfoh4u7qe"
-            >
-              Spotify</a
-            >
-          </p>
-        </div>
-
-        <!--
-        <div class="contact-info-container">
-          <img
-            src="./assets/Pinterest.png"
-            alt="Pinterest Icon"
-            class="icon contact-icon"
-          />
-          <p>
-            <a href="https://pinterest.com/aaravshah0011/"> Pinterest</a>
-          </p>
-        </div>
-        -->
-
-        <!--
-        <div class="contact-info-container">
-          <img
-            src="./assets/Reddit.png"
-            alt="Reddit Icon"
-            class="icon contact-icon"
-          />
-          <p>
-            <a href="https://www.reddit.com/user/The_Maths_Wizard/"> Reddit</a>
-          </p>
-        </div>
-        -->
-
-        <div class="contact-info-container">
-          <img
-            src="./assets/github.png"
-            alt="Github Icon"
-            class="icon contact-icon"
-          />
-          <p>
-            <a href="https://github.com/Aaravshah2907"> Github</a>
-          </p>
-        </div>
-
-        <div class="contact-info-container">
-          <img
-            src="./assets/Threads.png"
-            alt="Threads Icon"
-            class="icon contact-icon"
-          />
-          <p>
-            <a href="https://www.threads.net/@aarav.shah.29"> Threads</a>
-          </p>
-        </div>
-
-        <!--
-        <div class="contact-info-container">
-          <img
-            src="./assets/Discord.png"
-            alt="Discord Icon"
-            class="icon contact-icon"
-          />
-          <p>
-            <a href="https://discordapp.com/users/839432771847585822">
-              Discord</a
-            >
-          </p>
-        </div>
-        -->
-
-        <div class="contact-info-container">
-          <img
-            src="./assets/Phone.png"
-            alt="Phone Icon"
-            class="icon contact-icon"
-          />
-          <p>
-            <a href="./assets/aarav.shah-contact.vcf"> Contact Me</a>
-          </p>
+          <div class="contact-item">
+            <img src="./assets/github.png" alt="GitHub" />
+            <a href="https://github.com/Aaravshah2907">GitHub Profile</a>
+          </div>
         </div>
       </div>
     </section>
-    <footer style="padding-top: 20rem">
+
+    <!-- Footer -->
+    <footer>
       <nav>
         <div class="nav-links-container">
-          <div>
-            <span></span>
-            <span></span>
-            <span></span>
-            <ul class="nav-links">
-              <li><a href="#about">About</a></li>
-              <li><a href="#experience">Experience</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#academics">Academics</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#journey">Journey</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2023 Aarav Shah. All Rights Reserved.</p>
+      <p>Copyright &#169; 2025 Aarav Shah. All Rights Reserved.</p>
     </footer>
+
     <script src="script.js"></script>
   </body>
 </html>

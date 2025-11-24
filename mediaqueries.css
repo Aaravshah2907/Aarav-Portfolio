@@ -1,101 +1,121 @@
-@media screen and (max-width: 1400px) {
-  #profile {
-    height: 83vh;
-    margin-bottom: 6rem;
-  }
-  #about-containers {
-    flex-wrap: wrap;
+/* Responsive Design Breakpoints */
+
+/* Large Screens (Desktops) */
+@media screen and (min-width: 1400px) {
+  :root {
+    --container-width: 1320px;
   }
 }
 
+/* Medium Screens (Tablets & Small Laptops) */
 @media screen and (max-width: 1200px) {
+  :root {
+    --container-width: 960px;
+    --section-padding: 5rem 1.5rem;
+  }
+  
+  h1 { font-size: 3rem; }
+  h2 { font-size: 2.25rem; }
+  
+  #profile {
+    gap: 3rem;
+  }
+  
+  .profile-pic-wrapper {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+/* Tablet Portrait */
+@media screen and (max-width: 992px) {
+  :root {
+    --container-width: 720px;
+  }
+  
   #desktop-nav {
     display: none;
   }
+  
   #hamburger-nav {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 5%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    background: rgba(10, 10, 10, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: var(--glass-border);
   }
-  #experience,
-  .experience-details-container {
-    margin-top: 2rem;
+  
+  #profile {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    padding-top: 120px;
   }
-  #profile,
-  .section-container {
-    display: block;
+  
+  .profile-pic-wrapper {
+    width: 300px;
+    height: 300px;
   }
-  .arrow {
-    display: none;
+  
+  .about-content {
+    flex-direction: column;
+    align-items: center;
   }
-  .section-container,
-  section {
-    height: fit-content;
-  }
-  section {
-    margin: 0 5%;
-  }
-  .section__pic-container {
-    width: 275px;
-    height: 275px;
-    margin: 0 auto 2rem;
-  }
-  .about-containers {
-    margin-top: 0;
+  
+  .about-pic-container {
+    margin-bottom: 2rem;
   }
 }
 
+/* Mobile Devices */
 @media screen and (max-width: 600px) {
-  #contact,
-  footer {
-    height: 40vh;
+  :root {
+    --section-padding: 4rem 1rem;
   }
-  #profile {
-    height: 83vh;
-    margin-bottom: 0;
+  
+  h1 { font-size: 2.5rem; }
+  h2 { font-size: 2rem; }
+  
+  .profile-pic-wrapper {
+    width: 250px;
+    height: 250px;
   }
-  article {
-    font-size: 1rem;
-  }
-  footer nav {
-    height: fit-content;
-    margin-bottom: 2rem;
-  }
-  .about-containers,
-  .contact-info-upper-container,
+  
   .btn-container {
-    flex-wrap: wrap;
-  }
-  .contact-info-container {
-    margin: 0;
-  }
-
-  .contact-info-container p,
-  .nav-links li a {
-    font-size: 1rem;
-  }
-
-  .experience-sub-title {
-    font-size: 1.25rem;
-  }
-  .logo {
-    font-size: 1.5rem;
-  }
-  .nav-links {
     flex-direction: column;
-    gap: 0.5rem;
-    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto 2rem;
   }
-  .section__pic-container {
-    width: auto;
-    height: 46vw;
-    justify-content: center;
+  
+  .btn {
+    width: 100%;
   }
-  .section__text__p2 {
-    font-size: 1.25rem;
+  
+  .about-pic {
+    width: 280px;
+    height: 280px;
   }
-  .title {
-    font-size: 2rem;
+  
+  .stats-container {
+    grid-template-columns: 1fr;
   }
-  .text-container {
-    text-align: justify;
+  
+  .contact-container {
+    padding: 1.5rem;
+  }
+  
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
   }
 }
