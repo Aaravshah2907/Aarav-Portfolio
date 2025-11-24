@@ -82,6 +82,10 @@
   h1 { font-size: 2.5rem; }
   h2 { font-size: 2rem; }
   
+  .profile-container {
+    flex-direction: column;
+  }
+  
   .profile-pic-wrapper {
     width: 250px;
     height: 250px;
@@ -113,6 +117,10 @@
   
   .contact-grid {
     grid-template-columns: 1fr;
+  }
+  
+  .work-history-container .projects-grid {
+    grid-template-columns: 1fr !important;
   }
   
   .project-card:hover {
