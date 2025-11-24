@@ -144,6 +144,136 @@
     grid-template-columns: 1fr !important;
   }
   
+  .skills-list {
+    grid-template-columns: 1fr 1fr !important; /* 2 columns for mobile (5x2 layout) */
+    gap: 1rem 1.5rem; /* Slightly smaller gaps for mobile */
+  }
+  
+  /* Technical Skills mobile adjustments */
+  .skill-category {
+    padding: 1.5rem;
+  }
+  
+  .skill-item h4 {
+    font-size: 0.9rem;
+  }
+  
+  .skill-item p {
+    font-size: 0.8rem;
+  }
+  
+  /* Projects Section mobile adjustments */
+  #projects {
+    padding: 3rem 1rem;
+  }
+  
+  .projects-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem;
+  }
+  
+  .project-card {
+    max-width: 100%;
+  }
+  
+  .project-img-wrapper {
+    max-height: 250px;
+  }
+  
+  .project-content {
+    padding: 1.5rem;
+  }
+  
+  /* Timeline mobile redesign - single column vertical layout */
+  .timeline::after {
+    left: 20px;
+  }
+  
+  .timeline-item {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 0;
+  }
+  
+  .timeline-item::after {
+    left: 11px;
+    right: auto;
+  }
+  
+  .timeline-item.left,
+  .timeline-item.right {
+    left: 0;
+  }
+  
+  .timeline-item.left::before,
+  .timeline-item.right::before {
+    display: none;
+  }
+  
+  .timeline-content {
+    width: 100%;
+  }
+  
+  /* Contact section mobile adjustments */
+  .contact-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1rem;
+  }
+  
+  .contact-item {
+    padding: 1rem 0.75rem;
+    min-height: 90px;
+    gap: 0.5rem;
+  }
+  
+  .contact-item img {
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+  
+  .contact-item a {
+    font-size: 0.85rem;
+  }
+  
+  /* Footer mobile adjustments */
+  footer {
+    padding: 1.5rem 1rem;
+    overflow-x: hidden;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  footer nav {
+    margin-bottom: 1rem;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  
+  footer .nav-links-container {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  
+  footer .nav-links {
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+  }
+  
+  footer .nav-links li {
+    width: auto;
+    text-align: center;
+  }
+  
+  footer p {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    word-wrap: break-word;
+    max-width: 100%;
+  }
+  
   .project-card:hover {
     transform: translateY(-5px);
   }
