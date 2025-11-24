@@ -1027,3 +1027,23 @@ footer p {
 .hamburger-icon.open span:last-child {
   transform: rotate(-45deg) translate(10px, -5px);
 }
+
+/* Mobile Theme Toggle Button */
+.mobile-theme-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1001;
+  position: relative;
+  cursor: pointer;
+  pointer-events: auto;
+  padding: 0.5rem;
+  min-width: 40px;
+  min-height: 40px;
+}
+
+.mobile-theme-btn img {
+  width: 1.5rem;
+  height: 1.5rem;
+  pointer-events: none;
+}
