@@ -204,7 +204,7 @@ body.light-mode .stat-card img {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
   .contact-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -744,7 +744,7 @@ body.light-mode .btn-secondary:hover img {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
   .experience-grid {
     grid-template-columns: 1fr;
   }
@@ -893,7 +893,7 @@ body.light-mode .btn-secondary:hover img {
   padding: 0 2rem;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
   .contact-grid {
     grid-template-columns: repeat(2, 1fr);
   }

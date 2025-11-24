@@ -27,8 +27,8 @@
   }
 }
 
-/* Tablet Portrait */
-@media screen and (max-width: 992px) {
+/* Tablet Portrait & Mobile */
+@media screen and (max-width: 768px) {
   :root {
     --container-width: 720px;
   }

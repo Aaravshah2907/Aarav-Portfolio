@@ -54,14 +54,17 @@ function toggleTheme(e) {
   if (e) e.preventDefault(); // Prevent default anchor behavior
   const body = document.body;
   const themeIcon = document.getElementById("theme-icon");
+  const mobileThemeIcon = document.getElementById("mobile-theme-icon");
 
   body.classList.toggle("light-mode");
 
   if (body.classList.contains("light-mode")) {
-    themeIcon.src = "assets/moon.svg";
+    if (themeIcon) themeIcon.src = "assets/moon.svg";
+    if (mobileThemeIcon) mobileThemeIcon.src = "assets/moon.svg";
     localStorage.setItem("theme", "light");
   } else {
-    themeIcon.src = "assets/sun.svg";
+    if (themeIcon) themeIcon.src = "assets/sun.svg";
+    if (mobileThemeIcon) mobileThemeIcon.src = "assets/sun.svg";
     localStorage.setItem("theme", "dark");
   }
 }
@@ -73,12 +76,14 @@ document.addEventListener('DOMContentLoaded', () => {
   if (savedTheme === "light") {
     document.body.classList.add("light-mode");
     const icon = document.getElementById("theme-icon");
+    const mobileIcon = document.getElementById("mobile-theme-icon");
     if (icon) icon.src = "assets/moon.svg";
+    if (mobileIcon) mobileIcon.src = "assets/moon.svg";
   }
 
   // Attach Event Listeners
   const desktopBtn = document.getElementById('theme-toggle-btn');
-  const mobileBtn = document.getElementById('mobile-theme-toggle');
+  const mobileBtn = document.getElementById('mobile-theme-toggle-btn');
 
   if (desktopBtn) desktopBtn.addEventListener('click', toggleTheme);
   if (mobileBtn) mobileBtn.addEventListener('click', toggleTheme);
