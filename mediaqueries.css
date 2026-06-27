@@ -171,6 +171,10 @@
     grid-template-columns: 1fr !important;
     gap: 1.5rem;
   }
+
+  .featured-project {
+    grid-column: span 1;
+  }
   
   .project-card {
     max-width: 100%;
@@ -182,6 +186,16 @@
   
   .project-content {
     padding: 1.5rem;
+  }
+
+  .install-strip,
+  .project-actions {
+    flex-direction: column;
+  }
+
+  .install-strip code,
+  .project-actions .btn {
+    width: 100%;
   }
   
   /* Timeline mobile redesign - single column vertical layout */
