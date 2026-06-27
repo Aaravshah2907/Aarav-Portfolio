@@ -284,6 +284,19 @@ p { color: var(--text-secondary); font-size: 1.125rem; }
   margin-bottom: 0.5rem;
 }
 
+.section-intro {
+  max-width: 760px;
+  margin: -1.5rem auto 2.5rem;
+  text-align: center;
+  font-size: 1.05rem;
+}
+
+.subsection-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--text-primary);
+}
+
 /* Navigation */
 #desktop-nav {
   display: flex;
@@ -325,7 +338,7 @@ body.light-mode #desktop-nav.scrolled {
 
 .nav-links {
   display: flex;
-  gap: 2.5rem;
+  gap: clamp(1rem, 2vw, 2.5rem);
   list-style: none;
 }
 
@@ -422,7 +435,33 @@ body.light-mode #desktop-nav.scrolled {
 .profile-text .role {
   font-size: 2rem;
   color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+.hero-summary {
+  max-width: 620px;
+  margin: 0 auto 1.5rem;
+  font-size: 1.1rem !important;
+  font-weight: 400 !important;
+  color: var(--text-secondary);
+}
+
+.hero-highlights {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
   margin-bottom: 2rem;
+}
+
+.hero-highlights span {
+  border: var(--glass-border);
+  border-radius: 999px;
+  background: rgba(100, 255, 218, 0.08);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 0.45rem 0.8rem;
 }
 
 .btn-container {
@@ -744,6 +783,16 @@ body.light-mode .btn-secondary:hover img {
   margin: 0 auto;
 }
 
+.work-history-container {
+  margin-bottom: 3rem;
+}
+
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+}
+
 @media screen and (max-width: 768px) {
   .experience-grid {
     grid-template-columns: 1fr;
@@ -850,6 +899,28 @@ body.light-mode .btn-secondary:hover img {
   font-size: 1.25rem;
   margin-bottom: 0.5rem;
   color: var(--text-primary);
+}
+
+.project-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-heading .project-title {
+  margin-bottom: 0;
+}
+
+.project-badge {
+  flex: 0 0 auto;
+  border-radius: 999px;
+  background: var(--gradient-1);
+  color: #ffffff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.28rem 0.7rem;
 }
 
 .project-desc {

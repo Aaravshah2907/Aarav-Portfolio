@@ -18,6 +18,7 @@ document.querySelectorAll('.menu-links a').forEach(link => {
 // Scroll Effect for Header
 window.addEventListener('scroll', () => {
   const nav = document.querySelector('#desktop-nav');
+  if (!nav) return;
   if (window.scrollY > 50) {
     nav.classList.add('scrolled');
   } else {
@@ -51,7 +52,6 @@ document.querySelectorAll('.project-card, .skill-category, .stat-card, .contact-
 
 // Theme Toggle Logic
 function toggleTheme(e) {
-  console.log('Theme toggle clicked!'); // Debug log
   if (e) e.preventDefault(); // Prevent default anchor behavior
   const body = document.body;
   const themeIcon = document.getElementById("theme-icon");
@@ -63,12 +63,10 @@ function toggleTheme(e) {
     if (themeIcon) themeIcon.src = "assets/moon.svg";
     if (mobileThemeIcon) mobileThemeIcon.src = "assets/moon.svg";
     localStorage.setItem("theme", "light");
-    console.log('Switched to light mode'); // Debug log
   } else {
     if (themeIcon) themeIcon.src = "assets/sun.svg";
     if (mobileThemeIcon) mobileThemeIcon.src = "assets/sun.svg";
     localStorage.setItem("theme", "dark");
-    console.log('Switched to dark mode'); // Debug log
   }
 }
 

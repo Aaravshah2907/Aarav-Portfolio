@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aarav Shah | Physics & Computing Student</title>
-    <meta name="description" content="Portfolio of Aarav Shah, a B.E. Mathematics & Computing and M.Sc. Physics student at BITS Pilani." />
+    <title>Aarav Shah | Physics, Data & Developer Tools</title>
+    <meta name="description" content="Portfolio of Aarav Shah, a BITS Pilani Physics and Mathematics & Computing student building computational physics workflows, data analysis projects, and local-first developer tools." />
     <link rel="icon" href="./assets/final_logo.png" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
@@ -68,14 +68,22 @@
         <div class="profile-text">
           <p>Hello, I'm</p>
           <h1 class="gradient-text">Aarav Shah</h1>
-          <p class="role">Physics, Computing & Terminal Tooling</p>
+          <p class="role">Physics, Data & Local-First Developer Tools</p>
+          <p class="hero-summary">
+            I turn dense technical systems into useful tools: climate and solar-energy analysis, computational physics workflows, and polished terminal apps like CPKB.
+          </p>
+          <div class="hero-highlights" aria-label="Portfolio highlights">
+            <span>CGPA 9.11</span>
+            <span>NCPOR Research Intern</span>
+            <span>Published pipx + Homebrew package</span>
+          </div>
           
           <div class="btn-container">
             <button class="btn btn-primary" onclick="window.open('./assets/Superset-CV-Aarav-Shah-v2.pdf')">
               Download CV
             </button>
-            <button class="btn btn-secondary" onclick="location.href='#contact'">
-              Contact Info
+            <button class="btn btn-secondary" onclick="location.href='#projects'">
+              View Projects
             </button>
           </div>
           
@@ -116,14 +124,14 @@
             
             <div class="text-container">
               <p>
-                Hi, I am Aarav Shah, a Junior (3rd Year) student at <strong>Birla Institute of Technology & Science, Pilani</strong>. 
+                Hi, I am Aarav Shah, a Junior (3rd Year) student at <strong>Birla Institute of Technology and Science, Pilani</strong>. 
                 I am pursuing a Dual Degree in <strong>M.Sc. Physics</strong> and <strong>B.E. Mathematics & Computing</strong> (2023-2028).
               </p>
               <br />
               <p>
-                Based in Mumbai, I work across computational physics, applied data analysis, and terminal-first software.
-                My recent work includes ocean-current modelling at NCPOR, solar-energy data analysis, and public tools such as
-                <strong>CPKB</strong>, <strong>Media Tracker</strong>, and <strong>Knowledge Grapher</strong>.
+                Based in Mumbai, I work across computational physics, applied data analysis, and terminal-first software. Recent work includes
+                ocean-current modelling at NCPOR, solar-energy sensor analysis, renewable-energy socio-economic research, and public tools such
+                as <strong>CPKB</strong>, <strong>Media Tracker</strong>, and <strong>Knowledge Grapher</strong>.
               </p>
             </div>
           </div>
@@ -136,6 +144,9 @@
       <p class="section-subtitle">Academic Focus</p>
       <h2 class="title">Research & Interests</h2>
       <div class="container">
+        <p class="section-intro">
+          My current through-line is using computation to make complex knowledge easier to model, inspect, and remember.
+        </p>
         <div class="research-grid">
           <div class="research-card">
             <h3>Computational Physics</h3>
@@ -348,9 +359,9 @@
       
       <div class="container">
         <!-- Work History -->
-        <div class="work-history-container" style="margin-bottom: 3rem;">
-          <h3 style="text-align: center; margin-bottom: 2rem; color: var(--text-primary);">Work History</h3>
-          <div class="projects-grid" style="grid-template-columns: repeat(2, 1fr);">
+        <div class="work-history-container">
+          <h3 class="subsection-title">Work History</h3>
+          <div class="work-grid">
             
             <!-- Data Analyst (Latest) -->
             <div class="project-card" style="padding: 2rem;">
@@ -431,7 +442,7 @@
         </div>
 
         <!-- Skills Grid (Redesigned) -->
-        <h3 style="text-align: center; margin-bottom: 2rem; color: var(--text-primary);">Technical Skills</h3>
+        <h3 class="subsection-title">Technical Skills</h3>
         <div class="experience-grid">
           <!-- Programming Languages (8) -->
           <div class="skill-category">
@@ -476,6 +487,9 @@
       <h2 class="title">Projects</h2>
       
       <div class="container">
+        <p class="section-intro">
+          A mix of packaged tools, research artifacts, and local workflows. The common thread is fast, private, terminal-friendly software.
+        </p>
         <div class="projects-grid">
           <div class="project-card featured-project">
             <div class="project-img-wrapper project-terminal-visual">
@@ -486,7 +500,10 @@
               </div>
             </div>
             <div class="project-content">
-              <h3 class="project-title">CPKB</h3>
+              <div class="project-heading">
+                <h3 class="project-title">CPKB</h3>
+                <span class="project-badge">Flagship</span>
+              </div>
               <div class="project-tags">
                 <span class="tag">Python Package</span>
                 <span class="tag">Textual TUI</span>
@@ -755,7 +772,7 @@
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2025 Aarav Shah. All Rights Reserved.</p>
+      <p>Copyright &#169; 2026 Aarav Shah. All Rights Reserved.</p>
     </footer>
 
     <script src="script.js"></script>
